@@ -24,7 +24,7 @@ export default function ConfirmScreen() {
     };
 
     const url =
-      "http://noderserver-cny-env.eba-jxdaadr2.ap-southeast-1.elasticbeanstalk.com/api/attendee";
+      "https://kiosk-event-api.onrender.com/api/attendee";
 
     fetch(url, {
       method: "POST",
@@ -45,7 +45,7 @@ export default function ConfirmScreen() {
 
   useEffect(() => {
     const apiUrl =
-      "http://noderserver-cny-env.eba-jxdaadr2.ap-southeast-1.elasticbeanstalk.com/api/attendee/" +
+      "https://kiosk-event-api.onrender.com/api/attendee/" +
       number;
     fetch(apiUrl)
       .then((response) => response.json())

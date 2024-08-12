@@ -13,7 +13,7 @@ export default function PersonScreen() {
 
   useEffect(() => {
     fetch(
-      "http://noderserver-cny-env.eba-jxdaadr2.ap-southeast-1.elasticbeanstalk.com/api/registration"
+      "https://kiosk-event-api.onrender.com/api/registration"
     )
       .then((response) => {
         if (!response.ok) {

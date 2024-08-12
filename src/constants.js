@@ -1,0 +1,5 @@
+export const ORDER_CLEAR = "ORDER_CLEAR";
+export const NUMBER_SET_TYPE = "NUMBER_SET_TYPE";
+export const ATTENDEE_SET_TYPE = "ATTENDEE_SET_TYPE";
+export const LETTER_SET_TYPE = "LETTER_SET_TYPE";
+export const COMPANY_SET_TYPE = "COMPANY_SET_TYPE";

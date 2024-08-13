@@ -52,8 +52,10 @@
 
 .bottom-button {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: flex-end; /* Align to the bottom */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: flex-end;
+  /* Align to the bottom */
 }
 
 .bottom-button button {
@@ -66,7 +68,7 @@
 }
 
 .welcome-print {
-  color: #1428a0;
+  color: #a3212a;
   font-size: 140px;
 }
 
@@ -76,7 +78,7 @@
 }
 
 .tablebutton {
-  background-color: #1428a0;
+  background-color: #a3212a;
   color: #ffffff;
   font-size: 140px;
   border: none;
@@ -101,10 +103,12 @@
 .right-part {
   flex: 65%;
   background-color: #004aad;
-  color: #fff; /* Black text color for the right part */
+  color: #fff;
+  /* Black text color for the right part */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertically center content */
+  justify-content: center;
+  /* Vertically center content */
   text-align: left;
   font-size: 50px;
   margin: 0px;
@@ -114,9 +118,12 @@
 .left-part {
   flex: 35%;
   background-color: #004aad;
-  color: #fff; /* White text color for the left part */
+  color: #fff;
+  /* White text color for the left part */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertically center content */
-  align-items: center; /* Horizontally center content */
+  justify-content: center;
+  /* Vertically center content */
+  align-items: center;
+  /* Horizontally center content */
 }

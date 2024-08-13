@@ -16,7 +16,7 @@
   height: 100vh;
   font-size: 45px;
   text-align: center;
-  color: #1428a0;
+  color: #a3212a;
   padding-top: 0%;
 }
 
@@ -43,9 +43,12 @@
 
 .bottom-button {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: flex-end; /* Align to the bottom */
-  padding: 20px; /* Optional padding for spacing */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: flex-end;
+  /* Align to the bottom */
+  padding: 20px;
+  /* Optional padding for spacing */
 }
 
 .button-list {
@@ -53,8 +56,10 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  max-height: 1200px; /* Set the maximum height for scrolling */
-  overflow-y: auto; /* Enable vertical scrollbar when content exceeds the height */
+  max-height: 1200px;
+  /* Set the maximum height for scrolling */
+  overflow-y: auto;
+  /* Enable vertical scrollbar when content exceeds the height */
 }
 
 .button-list button {
@@ -62,14 +67,15 @@
   padding: 10px;
   font-size: 35px;
   font-weight: bold;
-  background: linear-gradient(
-    to bottom,
-    #4caf50,
-    #45a049
-  ); /* Green gradient background */
-  border: none; /* Remove the border */
+  background: linear-gradient(to bottom,
+      #4caf50,
+      #45a049);
+  /* Green gradient background */
+  border: none;
+  /* Remove the border */
   border-radius: 15px;
-  color: #fff; /* Set text color to white */
+  color: #fff;
+  /* Set text color to white */
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -83,15 +89,19 @@
   top: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 10px; /* Adjust the padding as needed */
-  z-index: 1; /* Ensures the text appears on top of the image */
+  padding: 10px;
+  /* Adjust the padding as needed */
+  z-index: 1;
+  /* Ensures the text appears on top of the image */
   font-size: 40px;
 }
 
 .buttonCompany {
   display: block;
-  margin: 0 auto; /* Center-align the button horizontally */
-  margin-bottom: 10px; /* Set margin-bottom to 20px */
+  margin: 0 auto;
+  /* Center-align the button horizontally */
+  margin-bottom: 10px;
+  /* Set margin-bottom to 20px */
   padding: 10px;
   width: 60%;
   background-color: #004aad;
@@ -99,26 +109,33 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  text-align: center; /* Center-align the text within the button */
-  font-size: 40px; /* Increase the font size */
+  text-align: center;
+  /* Center-align the text within the button */
+  font-size: 40px;
+  /* Increase the font size */
 }
 
 .scrollable-list-company {
-  max-height: 1200px; /* Set the maximum height for scrolling */
-  overflow-y: auto; /* Enable vertical scrollbar when content exceeds the height */
+  max-height: 1200px;
+  /* Set the maximum height for scrolling */
+  overflow-y: auto;
+  /* Enable vertical scrollbar when content exceeds the height */
 }
 
 .alphabet-host {
   margin: 0;
-  background-color: #1428a0;
-  color: white; /* Add text color to ensure readability on a red background */
-  padding: 30px; /* Add padding for better visual appearance */
+  background-color: #a3212a;
+  color: white;
+  /* Add text color to ensure readability on a red background */
+  padding: 30px;
+  /* Add padding for better visual appearance */
 }
 
 .number-input-container {
   display: flex;
   justify-content: center;
-  margin-top: 200px; /* Adjust the margin as needed */
+  margin-top: 200px;
+  /* Adjust the margin as needed */
 }
 
 .input-circle {
@@ -130,7 +147,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 30px; /* Adjust the margin as needed */
+  margin: 0 30px;
+  /* Adjust the margin as needed */
   cursor: pointer;
   font-size: 100px;
 }
@@ -139,7 +157,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20px; /* Adjust the margin as needed */
+  margin-top: 20px;
+  /* Adjust the margin as needed */
 }
 
 .calculator-keypad {

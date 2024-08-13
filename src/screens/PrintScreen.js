@@ -14,20 +14,15 @@ function App() {
     function generateReceiptData() {
       var receiptData =
         "<1><c>*********************************************</><e>" +
-        "<1>KEEP THIS TICKET FOR LUCKY DRAW</><e>" +
+        "<1>SINGAPORE RETIALERS ASSOCIATION</><e>" +
         "<1>                                                </><e>" +
         "<2>" +
         attendee.person +
         "</><e>" +
         "<1>                                                </><e>" +
-        "<1>Table Number:</><e>" +
+        "<1></><e>" +
         "<2>" +
-        attendee.table +
-        "</><e>" +
-        "<1>                                                </><e>" +
-        "<1>Lucky Draw Number:</><e>" +
-        "<2>" +
-        attendee.lucky +
+        attendee.company +
         "</><e>" +
         "<1>                                                </><e>" +
         "<1><c>powered by SAMSUNG</><e>" +
@@ -137,13 +132,13 @@ function App() {
       };
       var printPort = "PRINTERPORT1";
 
-      function onlistener(printSerialData) {}
+      function onlistener(printSerialData) { }
       try {
         result = window.b2bapis.serialprint.open(printPort, option, onlistener);
         if (result == true) {
         } else {
         }
-      } catch (e) {}
+      } catch (e) { }
     }
 
     function closeSerialPrint() {
@@ -154,7 +149,7 @@ function App() {
         result = window.b2bapis.serialprint.close(printPort);
         if (result == false) {
         }
-      } catch (e) {}
+      } catch (e) { }
     }
 
     function writeReceipt() {
@@ -168,7 +163,7 @@ function App() {
           data,
           data.length
         );
-      } catch (e) {}
+      } catch (e) { }
     }
 
     openSerialPrint();
@@ -188,10 +183,11 @@ function App() {
       <div className="left-pane">
         <h1 className="welcome-print">WELCOME</h1>
         <h1>{attendee.person}</h1>
-        <h4 className="yourtable">Your Table Number Is</h4>
+        <h1>{attendee.company}</h1>
+        {/* <h4 className="yourtable">Your Table Number Is</h4>
         <button className="tablebutton">{attendee.table}</button>
         <h4 className="yourtable">Your Lucky Draw Number Is</h4>
-        <button className="tablebutton">{attendee.lucky}</button>
+        <button className="tablebutton">{attendee.lucky}</button> */}
       </div>
       <div className="right-pane">
         <img src={samsung} alt="" />

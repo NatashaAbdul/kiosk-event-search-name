@@ -11,9 +11,9 @@ export default function HomeScreen() {
   };
 
   return (
-    <div className="homescreen-container" onClick={handleClick}>
+    <div className="c-container" onClick={handleClick}>
       <div className="full-screen">
-        <img src={dragon} alt="Dragon" className="dragon-image" />
+        <img src={dragon} alt="Drargon" className="dragon-image" />
       </div>
     </div>
   );

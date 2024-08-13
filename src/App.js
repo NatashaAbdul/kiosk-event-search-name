@@ -6,6 +6,8 @@ import ConfirmScreen from "./screens/ConfirmScreen";
 import PrintScreen from "./screens/PrintScreen";
 import CompanyScreen from "./screens/CompanyScreen";
 import PersonScreen from "./screens/PersonScreen";
+import RegisterScreen from "./screens/RegisterScreen";
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <Route path="/person" element={<PersonScreen />} />
         <Route path="/confirm" element={<ConfirmScreen />} />
         <Route path="/print" element={<PrintScreen />} />
+        <Route path="/register" element={<RegisterScreen />} />
       </Routes>
     </HashRouter>
   );

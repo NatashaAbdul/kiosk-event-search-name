@@ -28,13 +28,14 @@
 
 .yourname {
   margin: 0;
-  background-color: #1428a0;
+  background-color: #a3212a;
   color: white;
   padding: 30px;
 }
 
 .attendee-info-container {
-  margin-top: 150px; /* Adjust as needed */
+  margin-top: 150px;
+  /* Adjust as needed */
   /* Add other styles as needed */
 }
 
@@ -44,11 +45,15 @@
 }
 
 .confirm-button {
-  background-color: #1428a0;
-  color: #fff; /* Text color */
-  padding: 10px 20px; /* Adjust padding as needed */
-  font-size: 50px; /* Adjust font size as needed */
-  border-radius: 20px; /* Add rounded corners if desired */
+  background-color: #a3212a;
+  color: #fff;
+  /* Text color */
+  padding: 10px 20px;
+  /* Adjust padding as needed */
+  font-size: 50px;
+  /* Adjust font size as needed */
+  border-radius: 20px;
+  /* Add rounded corners if desired */
   cursor: pointer;
   margin-top: 40px;
   /* Add other styles as needed */
@@ -80,6 +85,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }

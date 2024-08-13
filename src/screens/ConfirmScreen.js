@@ -4,6 +4,7 @@ import { clearOrder, setAttendee } from "../actions";
 import { Store } from "../store";
 import "../styles/ConfirmScreen.css";
 import samsung from "../images/samsung_logo.png";
+import { v4 as uuidv4 } from 'uuid';
 
 export default function ConfirmScreen() {
   const navigate = useNavigate();
@@ -17,10 +18,11 @@ export default function ConfirmScreen() {
 
     const postData = {
       company: localattendee.company,
-      table: localattendee.table,
+      // table: localattendee.table,
       person: localattendee.person,
-      lucky: localattendee.lucky,
-      uid: localattendee.uid,
+      // lucky: localattendee.lucky,
+      // uid: localattendee.uid,
+      uid: uuidv4()
     };
 
     const url =

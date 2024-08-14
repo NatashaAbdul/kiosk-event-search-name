@@ -61,20 +61,20 @@ export default function PersonScreen() {
           </div>
         )}
       </div>
+      <div className="register-container">
+        <h2>Not registered?</h2>
+        <p
 
+          onClick={() => {
+            navigate("/register");
+          }}
+        >
+          click to register
+        </p>
+      </div>
 
       <div className="right-pane">
-        <div className="register-container">
-          <h2>Not registered?</h2>
-          <p
 
-            onClick={() => {
-              navigate("/register");
-            }}
-          >
-            click to register
-          </p>
-        </div>
         <p
           className="overlay-text"
           onClick={() => {

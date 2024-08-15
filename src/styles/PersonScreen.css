@@ -88,6 +88,8 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  color: black;
+  font-size: medium;
 }
 
 .overlay-text {

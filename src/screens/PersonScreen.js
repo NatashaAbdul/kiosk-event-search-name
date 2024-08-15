@@ -41,6 +41,17 @@ export default function PersonScreen() {
     <div className="personscreen-container">
       <div className="left-pane">
         <h1 className="host">Search Your Name</h1>
+        <div className="register-container">
+          <h2>Can't find your name? </h2>
+          <p
+
+            onClick={() => {
+              navigate("/register");
+            }}
+          >
+            click to register
+          </p>
+        </div>
 
         {filteredPerson.length > 0 ? (
           <ul className="scrollable-list">
@@ -61,17 +72,7 @@ export default function PersonScreen() {
           </div>
         )}
       </div>
-      <div className="register-container">
-        <h2>Not registered?</h2>
-        <p
 
-          onClick={() => {
-            navigate("/register");
-          }}
-        >
-          click to register
-        </p>
-      </div>
 
       <div className="right-pane">
 

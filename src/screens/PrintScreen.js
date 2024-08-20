@@ -14,7 +14,7 @@ function App() {
     function generateReceiptData() {
       var receiptData =
         "<1><c>*********************************************</><e>" +
-        "<1>RESTAURANT ASSOCIATION SINGAPORE</><e>" +
+        "<1>RESTAURANT ASSOCIATION OF SINGAPORE</><e>" +
         "<1>                                                </><e>" +
         "<2>" +
         attendee.person +

@@ -11,6 +11,7 @@ export default function PersonScreen() {
   const { state, dispatch } = useContext(Store);
   const { company } = state.company;
   const [filteredPerson, setFilteredPerson] = React.useState([]);
+  const [errorMsg, setErrorMsg] = React.useState("");
   const [formData, setFormData] = useState({
     company: "",
     person: "",
@@ -41,8 +42,9 @@ export default function PersonScreen() {
           body: JSON.stringify(formattedData),
         }
       );
-
-      if (response.ok) {
+      const data = await response.json(); // Parse the JSON response
+      console.log(response)
+      if (response.status == 201) {
         handleClick(uid)
         // alert("Registration successful!");
         // Optionally, clear the form after successful submission
@@ -52,7 +54,8 @@ export default function PersonScreen() {
           // uid: "",
         });
       } else {
-        alert("Error: Could not register");
+        setErrorMsg(`Error Occured: ${data.message}`); // Display the message from the server
+        // alert("Error: Could not register");
       }
     } catch (error) {
       console.error("Error submitting registration:", error);
@@ -140,6 +143,7 @@ export default function PersonScreen() {
           <button type="submit" style={buttonStyle}>
             Register
           </button>
+          {errorMsg !== "" ? <p color="red" style={{ fontSize: '18px' }}>{errorMsg}</p> : <></>}
         </form>
       </div>
       <div className="right-pane">

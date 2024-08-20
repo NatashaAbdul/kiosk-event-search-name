@@ -16,7 +16,7 @@
   height: 100vh;
   font-size: 45px;
   text-align: center;
-  color: #a3212a;
+  color: #d31145;
   padding-top: 0%;
 }
 
@@ -124,7 +124,7 @@
 
 .alphabet-host {
   margin: 0;
-  background-color: #a3212a;
+  background-color: #d31145;
   color: white;
   /* Add text color to ensure readability on a red background */
   padding: 30px;

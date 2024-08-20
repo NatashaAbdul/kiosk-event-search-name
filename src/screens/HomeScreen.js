@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/HomeScreen.css";
-import dragon from "../images/dragon.jpg";
+import dragon from "../images/main.png";
 
 export default function HomeScreen() {
   const navigate = useNavigate();

@@ -14,15 +14,20 @@ function App() {
     function generateReceiptData() {
       var receiptData =
         "<1><c>*********************************************</><e>" +
-        "<1>RESTAURANT ASSOCIATION OF SINGAPORE</><e>" +
+        "<1>KEEP THIS TICKET FOR LUCKY DRAW</><e>" +
         "<1>                                                </><e>" +
         "<2>" +
-        attendee.person +
+        attendee.firstname + " " + attendee.lastname +
         "</><e>" +
         "<1>                                                </><e>" +
-        "<1></><e>" +
+        "<1>Table Number:</><e>" +
         "<2>" +
-        attendee.company +
+        attendee.table +
+        "</><e>" +
+        "<1>                                                </><e>" +
+        "<1>Lucky Draw Number:</><e>" +
+        "<2>" +
+        attendee.lucky +
         "</><e>" +
         "<1>                                                </><e>" +
         "<1><c>powered by SAMSUNG</><e>" +
@@ -182,7 +187,7 @@ function App() {
     <div className="printscreen-container">
       <div className="left-pane">
         <h1 className="welcome-print">WELCOME</h1>
-        <h1>{attendee.person}</h1>
+        <h1>{attendee.firstname} {attendee.lastname}</h1>
         <h1>{attendee.company}</h1>
         {/* <h4 className="yourtable">Your Table Number Is</h4>
         <button className="tablebutton">{attendee.table}</button>

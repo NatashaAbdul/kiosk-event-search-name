@@ -18,9 +18,11 @@ export default function ConfirmScreen() {
 
     const postData = {
       company: localattendee.company,
-      // table: localattendee.table,
-      person: localattendee.person,
-      // lucky: localattendee.lucky,
+      table: localattendee.table,
+      firstname: localattendee.firstname,
+      lastname: localattendee.lastname,
+      lucky: localattendee.lucky,
+      email: localattendee.email,
       // uid: localattendee.uid,
       uid: uuidv4()
     };
@@ -66,10 +68,10 @@ export default function ConfirmScreen() {
       <div className="left-pane">
         <h1 className="yourname">Confirm Your Name</h1>
 
-        {localattendee.person && localattendee.company ? (
+        {localattendee.firstname && localattendee.lastname && localattendee.company ? (
           <>
             <div className="attendee-info-container">
-              <h1 className="attendee-info">{localattendee.person}</h1>
+              <h1 className="attendee-info">{localattendee.firstname} {localattendee.lastname}</h1>
               <h1 className="attendee-info">{localattendee.company}</h1>
             </div>
             <button className="confirm-button" onClick={handleClickProceed}>

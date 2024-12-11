@@ -14,7 +14,11 @@ export default function PersonScreen() {
   const [errorMsg, setErrorMsg] = React.useState("");
   const [formData, setFormData] = useState({
     company: "",
-    person: "",
+    firstname: "",
+    lastname: "",
+    email: "",
+    table: "",
+    lucky: ""
     // uid: "",
   });
   const handleChange = (e) => {
@@ -27,7 +31,11 @@ export default function PersonScreen() {
     e.preventDefault();
     var formattedData = {
       company: formData.company,
-      person: formData.person,
+      firstname: formData.firstname,
+      lastname: formData.lastname,
+      email: formData.email,
+      table: formData.table,
+      lucky: formData.lucky,
       uid: uid,
     }
     console.log(formattedData);
@@ -50,7 +58,11 @@ export default function PersonScreen() {
         // Optionally, clear the form after successful submission
         setFormData({
           company: "",
-          person: "",
+          firstname: "",
+          lastname: "",
+          email: "",
+          table: "",
+          lucky: ""
           // uid: "",
         });
       } else {
@@ -133,10 +145,46 @@ export default function PersonScreen() {
           />
           <input
             type="text"
-            name="person"
-            value={formData.person}
+            name="firstname"
+            value={formData.firstname}
             onChange={handleChange}
-            placeholder="Person"
+            placeholder="First Name"
+            style={inputStyle}
+            required
+          />
+          <input
+            type="text"
+            name="lastname"
+            value={formData.lastname}
+            onChange={handleChange}
+            placeholder="Last Name"
+            style={inputStyle}
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="Email Address"
+            style={inputStyle}
+            required
+          />
+          <input
+            type="text"
+            name="table"
+            value={formData.table}
+            onChange={handleChange}
+            placeholder="Table Number"
+            style={inputStyle}
+            required
+          />
+          <input
+            type="text"
+            name="lucky"
+            value={formData.lucky}
+            onChange={handleChange}
+            placeholder="Lucky Number"
             style={inputStyle}
             required
           />

@@ -28,7 +28,7 @@
 
 .yourname {
   margin: 0;
-  background-color: #d31145;
+  background-color: #1428a0;
   color: white;
   padding: 30px;
 }
@@ -45,7 +45,7 @@
 }
 
 .confirm-button {
-  background-color: #d31145;
+  background-color: #1428a0;
   color: #fff;
   /* Text color */
   padding: 10px 20px;

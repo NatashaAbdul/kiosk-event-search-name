@@ -16,9 +16,9 @@ export default function PersonScreen() {
     company: "",
     firstname: "",
     lastname: "",
-    // email: "",
-    // table: "",
-    // lucky: ""
+    email: "",
+    table: "",
+    lucky: ""
     // uid: "",
   });
   const handleChange = (e) => {
@@ -33,9 +33,9 @@ export default function PersonScreen() {
       company: formData.company,
       firstname: formData.firstname,
       lastname: formData.lastname,
-      // email: formData.email,
-      // table: formData.table,
-      // lucky: formData.lucky,
+      email: formData.email,
+      table: formData.table,
+      lucky: formData.lucky,
       uid: uid,
     }
     console.log(formattedData);
@@ -60,9 +60,9 @@ export default function PersonScreen() {
           company: "",
           firstname: "",
           lastname: "",
-          // email: "",
-          // table: "",
-          // lucky: ""
+          email: "",
+          table: "",
+          lucky: ""
           // uid: "",
         });
       } else {
@@ -161,14 +161,14 @@ export default function PersonScreen() {
             style={inputStyle}
             required
           />
-          {/* <input
+          <input
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
             placeholder="Email Address"
             style={inputStyle}
-            required
+            hidden
           />
           <input
             type="text"
@@ -177,7 +177,7 @@ export default function PersonScreen() {
             onChange={handleChange}
             placeholder="Table Number"
             style={inputStyle}
-            required
+            hidden
           />
           <input
             type="text"
@@ -186,8 +186,8 @@ export default function PersonScreen() {
             onChange={handleChange}
             placeholder="Lucky Number"
             style={inputStyle}
-            required
-          /> */}
+            hidden
+          />
           <button type="submit" style={buttonStyle}>
             Register
           </button>

@@ -162,13 +162,13 @@ export default function PersonScreen() {
             required
           />
           <input
-            type="email"
+            type="text"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="Email Address"
+            placeholder="Group"
             style={inputStyle}
-            hidden
+            required
           />
           <input
             type="text"

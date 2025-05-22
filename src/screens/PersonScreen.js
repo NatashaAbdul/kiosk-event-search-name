@@ -62,7 +62,9 @@ export default function PersonScreen() {
                 onClick={() => handleClick(item.uid)}
                 style={{ display: "block", marginBottom: "10px" }}
               >
-                {item.firstname} {item.lastname}
+                {/* {item.firstname} {item.lastname} */}
+                {item.firstname} 
+
               </button>
             ))}
           </ul>

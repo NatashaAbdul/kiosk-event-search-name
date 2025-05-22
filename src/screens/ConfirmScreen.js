@@ -71,7 +71,9 @@ export default function ConfirmScreen() {
         {localattendee.firstname && localattendee.lastname && localattendee.company ? (
           <>
             <div className="attendee-info-container">
-              <h1 className="attendee-info">{localattendee.firstname} {localattendee.lastname}</h1>
+              {/* <h1 className="attendee-info">{localattendee.firstname} {localattendee.lastname}</h1> */}
+              <h1 className="attendee-info">{localattendee.firstname}</h1>
+
               <h1 className="attendee-info">{localattendee.company}</h1>
             </div>
             <button className="confirm-button" onClick={handleClickProceed}>

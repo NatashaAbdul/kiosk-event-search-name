@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/HomeScreen.css";
-import dragon from "../images/kiosk_cny.jpg";
+import landing from "../images/epaper_partner_event.jpg";
 
 export default function HomeScreen() {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ export default function HomeScreen() {
   return (
     <div className="c-container" onClick={handleClick}>
       <div className="full-screen">
-        <img src={dragon} alt="Drargon" className="dragon-image" />
+        <img src={landing} alt="Landing Image" className="landing-image" />
       </div>
     </div>
   );

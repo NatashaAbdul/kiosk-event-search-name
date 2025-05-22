@@ -197,10 +197,10 @@ function App() {
       <div className="right-pane">
         <img src={samsung} alt="" />
       </div>
-      <button
+      {/* <button
         className="printscreen-container-print"
         onClick={PrintReceipt()}
-      ></button>
+      ></button> */}
     </div>
   );
 }

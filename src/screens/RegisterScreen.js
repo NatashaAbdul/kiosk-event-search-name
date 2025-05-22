@@ -16,9 +16,9 @@ export default function PersonScreen() {
     company: "",
     firstname: "",
     lastname: "",
-    email: "",
-    table: "",
-    lucky: ""
+    // email: "",
+    // table: "",
+    // lucky: ""
     // uid: "",
   });
   const handleChange = (e) => {
@@ -33,9 +33,9 @@ export default function PersonScreen() {
       company: formData.company,
       firstname: formData.firstname,
       lastname: formData.lastname,
-      email: formData.email,
-      table: formData.table,
-      lucky: formData.lucky,
+      // email: formData.email,
+      // table: formData.table,
+      // lucky: formData.lucky,
       uid: uid,
     }
     console.log(formattedData);
@@ -60,9 +60,9 @@ export default function PersonScreen() {
           company: "",
           firstname: "",
           lastname: "",
-          email: "",
-          table: "",
-          lucky: ""
+          // email: "",
+          // table: "",
+          // lucky: ""
           // uid: "",
         });
       } else {
@@ -161,7 +161,7 @@ export default function PersonScreen() {
             style={inputStyle}
             required
           />
-          <input
+          {/* <input
             type="email"
             name="email"
             value={formData.email}
@@ -187,7 +187,7 @@ export default function PersonScreen() {
             placeholder="Lucky Number"
             style={inputStyle}
             required
-          />
+          /> */}
           <button type="submit" style={buttonStyle}>
             Register
           </button>

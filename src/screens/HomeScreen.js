@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/HomeScreen.css";
-import landing from "../images/epaper_partner_event.jpg";
+import landing from "../images/epaper_partner_event.png";
 
 export default function HomeScreen() {
   const navigate = useNavigate();
